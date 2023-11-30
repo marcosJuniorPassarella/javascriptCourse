@@ -21,3 +21,12 @@ for (const fruta of frutas) {
 }
 
 frutas.forEach((fruta) => console.log(`Fruta atual no forEach ${fruta}`));
+
+// Arrays Multidimensionais
+let matriz = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+console.log(matriz);
+console.log(matriz[1][2]);
