@@ -62,3 +62,17 @@ let multimensionalArray2 = [[5, 6]];
 let newMultidimensionalArray =
   multimensionalArray1.concat(multimensionalArray2);
 // console.log("MyMultidimensional Array is: ", newMultidimensionalArray);
+
+// Exemplo utilizando slice
+let originalArray = [1, 2, 3, 4, 5];
+let newSlicedArray = originalArray.slice(-4);
+// console.log("newSlicedArray", newSlicedArray);
+
+// Exemplo utilizando slice em arrays multidimensionais
+let multidimensionalArrayForSlice = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+let newSlicedMultidimensionalArray = multidimensionalArrayForSlice.slice(1);
+console.log("newSlicedMultidimensionalArray", newSlicedMultidimensionalArray);
