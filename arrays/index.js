@@ -38,9 +38,27 @@ let myArray = [2, 3, 4];
 myArray.unshift(1, 10, 20, 50);
 // console.log('My Array', myArray);
 
-
 // Exemplo utilizando shift()
 let mySecondArray = [2, 3, 4];
 let removedFirstElement = mySecondArray.shift();
-console.log(`My removedFirstElement ${removedFirstElement}`);
-console.log(`MySecondArray is ${mySecondArray}`);
+// console.log(`My removedFirstElement ${removedFirstElement}`);
+// console.log(`MySecondArray is ${mySecondArray}`);
+
+// Exemplo utilizando concat
+let array1 = [1, 2, 3];
+let value = 4;
+let array2 = [5, 6];
+
+let newArrayConcated = array1.concat(value, array2);
+// console.log("Array concatenado", newArrayConcated);
+
+// Exemplo utilizando arrays multidimensionais
+let multimensionalArray1 = [
+  [1, 2],
+  [3, 4],
+];
+let multimensionalArray2 = [[5, 6]];
+
+let newMultidimensionalArray =
+  multimensionalArray1.concat(multimensionalArray2);
+// console.log("MyMultidimensional Array is: ", newMultidimensionalArray);
