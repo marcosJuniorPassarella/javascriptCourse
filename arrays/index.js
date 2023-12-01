@@ -75,4 +75,28 @@ let multidimensionalArrayForSlice = [
   [7, 8, 9],
 ];
 let newSlicedMultidimensionalArray = multidimensionalArrayForSlice.slice(1);
-console.log("newSlicedMultidimensionalArray", newSlicedMultidimensionalArray);
+// console.log("newSlicedMultidimensionalArray", newSlicedMultidimensionalArray);
+
+// Exemplos utilizando splice()
+
+// Adicionar elementos em um ponto específico do array:
+let spliceArray = [1, 2, 3, 4, 5];
+spliceArray.splice(2, 0, 6, 7); // Adiciona os elementos 6 e 7 a partir do indice 2 => [1,2,6,7,3,4,5]
+// console.log("My splicedArray", spliceArray);
+
+// Remover elementos de um array
+let spliceRemoveElementArray = [1, 2, 3, 4, 5];
+spliceRemoveElementArray.splice(2, 2); // [1, 2, 5]
+// console.log('spliceRemoveElementArray', spliceRemoveElementArray);
+
+// Substituindo elementos de um array
+let spliceReplaceElementArray = [1, 2, 3, 4, 5];
+ // Remover 2 elementos a partir do indice 2 e adicionar 6 e 7
+ spliceReplaceElementArray.splice(2, 2, 6, 7); // [1, 2, 6, 7, 5]
+//  console.log('spliceReplaceElementArray', spliceReplaceElementArray);
+
+ // Remover elementos do final do array
+ let removeElementArray = [1, 2, 3, 4, 5];
+ removeElementArray.splice(-3) // Remover os dois últimos elementos do array
+//  console.log('removeElementArray', removeElementArray)
+
