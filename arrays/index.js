@@ -113,4 +113,12 @@ let newArrayWithForEach = [];
 myForEachArray.forEach((item, index, array) =>
   newArrayWithForEach.push(item * 2)
 );
-console.log("newArrayWithForEach", newArrayWithForEach);
+// console.log("newArrayWithForEach", newArrayWithForEach);
+
+// Exemplo utilizando o map()
+const myMapOriginalArray = [
+  { name: "Marcos", age: 20 },
+  { name: "Maria", age: 60 },
+];
+let nameOfUsersArray = myMapOriginalArray.map((element) => element.name);
+// console.log("nameOfUsersArray", nameOfUsersArray);
