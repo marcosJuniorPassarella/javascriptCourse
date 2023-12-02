@@ -91,12 +91,17 @@ spliceRemoveElementArray.splice(2, 2); // [1, 2, 5]
 
 // Substituindo elementos de um array
 let spliceReplaceElementArray = [1, 2, 3, 4, 5];
- // Remover 2 elementos a partir do indice 2 e adicionar 6 e 7
- spliceReplaceElementArray.splice(2, 2, 6, 7); // [1, 2, 6, 7, 5]
+// Remover 2 elementos a partir do indice 2 e adicionar 6 e 7
+spliceReplaceElementArray.splice(2, 2, 6, 7); // [1, 2, 6, 7, 5]
 //  console.log('spliceReplaceElementArray', spliceReplaceElementArray);
 
- // Remover elementos do final do array
- let removeElementArray = [1, 2, 3, 4, 5];
- removeElementArray.splice(-3) // Remover os dois últimos elementos do array
+// Remover elementos do final do array
+let removeElementArray = [1, 2, 3, 4, 5];
+removeElementArray.splice(-3); // Remover os dois últimos elementos do array
 //  console.log('removeElementArray', removeElementArray)
 
+// Exemplo utilizando indexOf()
+// Utilizando para encontrar a posição do primeiro elemento
+const myIndexOfArray = [1, 2, 3, 4, 2, 5];
+const index = myIndexOfArray.lastIndexOf(200);
+// console.log('INDEX OF NUMBER 2', index);
