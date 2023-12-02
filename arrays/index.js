@@ -105,3 +105,12 @@ removeElementArray.splice(-3); // Remover os dois últimos elementos do array
 const myIndexOfArray = [1, 2, 3, 4, 2, 5];
 const index = myIndexOfArray.lastIndexOf(200);
 // console.log('INDEX OF NUMBER 2', index);
+
+// Exemplo utilizando forEach()
+let myForEachArray = [1, 2, 3, 4, 5];
+let newArrayWithForEach = [];
+
+myForEachArray.forEach((item, index, array) =>
+  newArrayWithForEach.push(item * 2)
+);
+console.log("newArrayWithForEach", newArrayWithForEach);
